@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    height: 1000px;
+    
+}
+header::before{
+    content: "";
+    position: absolute;
+    background: url("./RUNUMA.jpg") center  no-repeat ;
+    height: 120%;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+}
+
+.row ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    height: 100px;
+    
+}
+.row li{
+   padding: 10px;
+   margin: 10px;
+
+} 
+.row li{
+   padding: 10px;
+   margin: 10px;
+
+} 
+.image-logo img{
+    height: 86px;
+    width: 91px;
+    background-color: transparent;
+    op
+
+
+} 
+.main-nav{
+    list-style: none;
+}
+ul a{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+ul a:hover{
+    box-shadow: 2px 2px 2px 2px black ;
+    height: 12px;
+    width: 12px;
+    font-size: 150%;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: navajowhite;
+    transition: all .5s ease-out .005s;
+}
+nav .animation{
+    width: 15px;
+    height: 15px;
+    margin-bottom: 86px;
+    background-color: red;
+}
+/* nav .animation{
+    animation: rotator 2s ease-in-out infinite ;
+}
+@keyframes rotator{
+    0%{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    25%{
+        z-index: -1;
+        margin-top: 170px;
+        margin-left: 0px;
+    }
+    50%{
+        margin-top: 0px;
+        margin-left: 800px;
+    }
+    0%{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+} */
+.btn-full a{
+    border: 2px solid black;
+    transform: rotate(360deg);
+    padding: 3px;
+    /* margin-top: 38px; */
+    margin: 188px 27px;
+    width: 10%;
+    border-radius: 29px;
+    transition:all .05s ease .05s;
+    text-decoration: none;
+}
+.btn-full a:hover{
+    box-shadow: 2px 2px 2px 2px black;
+    transform: scale(1.5);
+    
+}
+.btn-full{
+    display: flex;
+    flex-direction: row;
+    
+}
+.box{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 40px;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    transition: all .5s ease-out .005s;
+}
+.box:hover{
+    
+    transform:skew(25deg);
+    /* transform: rotate(360deg); */
+    /* transform:scale(2); */
+    /* transform:translate(70px,70px) */
+    cursor : pointer; 
+}
+.main-content{
+    height: 500px;
+    width: auto;
+}
+ #greet h1{
+    margin: 40px 0px 0px 215px;
+ }
+ span{
+     animation: arsh 1s ease .5s infinite;
+ }
+ @keyframes arsh{
+     0%{
+         color: red;
+     }
+     25%{
+         color:white;
+     }
+     75%{
+         color: purple;
+     }
+     100%{
+         color: white;
+     }
+ }
+    </style>
+</head>
+
+<body>
+    {{>navbar}}
+    <header>
+        <nav>
+            <div class="row">
+                <ul class="main-nav animate__animated animate__slideInDown">
+                    <div class="animation"></div>
+                    <div class="image-logo"><img src="./cupcakes-690040_1920.jpg" alt=""></div>
+                    <li><a href="">home</a></li>
+                    <li><a href="">take orders</a></li>
+                    <li><a href="">contact us</a></li>
+                    <li><a href="">about us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        <div class="main-content">
+            <div id="greet">
+                <h1>welcome to our <span>shandar restraunt</span> enjoy your meal</h1>
+            </div>
+            <div class="btn-full">
+                <a href="">click to order</a>
+                <a href="">go for shopiing </a>
+            </div>
+            
+        </div>
+        <div class="box">this is box</div>
+        
+</body>
+
+</html>
